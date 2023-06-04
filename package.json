@@ -9,7 +9,7 @@
     "webpackDev": "webpack serve",
     "build": "npm-run-all -s generate webpackBuild",
     "webpackBuild": "webpack",
-    "generate": "@babel-node --presets=@babel/preset-react,@babel/preset-env generateHtml",
+    "generate": "babel-node --presets=@babel/preset-react,@babel/preset-env generateHtml",
     "previewDist": "node previewDist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -22,7 +22,6 @@
     "@babel/preset-env": "^7.21.5",
     "@babel/preset-react": "^7.18.6",
     "axios": "^1.4.0",
-    "babel-cli": "^6.26.0",
     "babel-loader": "^9.1.2",
     "clean-webpack-plugin": "^4.0.0",
     "css-loader": "^6.7.3",
