@@ -4,6 +4,8 @@
   "description": "",
   "main": "test.js",
   "scripts": {
+    "postinstall": "npm run build",
+    "start": "npm babel-node dist/index.js",
     "dev": "npm-run-all -s generate webpackDev",
     "webpackDev": "webpack serve",
     "build": "npm-run-all -s generate webpackBuild",
